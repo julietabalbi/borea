@@ -1,0 +1,612 @@
+@import "_colors";
+
+* {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/*-------------------------------------ESTILOS GENERALES-----------------------------*/
+
+a:link{
+    color: $white;
+    text-decoration: none;
+}
+a:visited{
+    color: $white;
+    text-decoration: none;
+}
+
+p{ /* Parrafos sueltos */
+    font-size: 14px ;
+    color:black;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+}
+
+h3{
+    font-size: 20px;
+    font-weight: 700;
+    color: map-get($blue, 1 );
+    margin-bottom: 10px;
+}
+
+.titulo{ /*Título de las secciones*/
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    font-weight: 400;
+    color:map-get($blue,2);
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.fondoSeccion{ /*Fondo de secciones*/
+    background-color: map-get($blue, 6);
+    padding-top: 50px;
+    padding-bottom: 70px;
+    position: relative;
+}
+
+.seccion{
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+/*-------------------------------------NAVBAR-----------------------------*/
+
+.navbar a img{
+    height: 52px;
+}
+
+#nav{
+    background-color: map-get($blue, 1);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 30;
+    padding-left: 30px;
+    padding-right: 0;
+}
+
+.menu{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    justify-content: flex-end;
+    padding-right: 30px;
+
+    &__it{
+        margin-left: 50px;
+
+        & a:link{
+            color: $white;
+        }
+        
+        & a:visited{
+            color: $white;
+        }
+
+        & a:hover{
+            color: map-get($blue,3);
+            font-weight: 500;
+            transition: 1s;
+        }
+    }
+
+    &__button{
+        margin-right: 30px;
+    }
+}
+
+
+/*-------------------------------------VIDEO Y TEXTO-----------------------------*/
+
+
+.banner{ 
+    top: 200px;    
+
+    &__h1{
+        color: $white;
+        font-size: 56px;
+        font-family: 'Bebas Neue', cursive;
+        font-weight: 500;
+        margin-left: 0;
+    }
+
+    &__par{
+        font-size: 22px;
+        color: $white;
+        margin-left: 0;
+    }
+} 
+
+
+/*-------------------------------------SECCIÓN SOMOS BOREA-----------------------------*/
+
+#about{
+    height: 600px;
+    position: relative;
+
+    .anchor{
+        position: absolute;
+        left: 0px;
+        top: -70px;
+    }
+
+}
+
+.about{
+    &__block{
+        display: inline-block;
+        width: 45%;
+        padding: 10px;
+        position: absolute;
+        right: 10px;
+        text-align: center;
+    }
+
+    &__description{
+        width: 600px;
+        top: 200px;
+        display: inline-block;
+        position: absolute;
+    }
+}
+
+
+
+/*-------------------------------------SECCIÓN RECONOCIMIENTOS-----------------------------*/
+
+
+table{
+    border-collapse: collapse;
+    border: solid map-get($blue, 4) 3px;
+    width: 95%;
+    margin-left: 2%;
+    
+    thead{
+        font-weight: 500;
+        color:map-get($blue, 4) ;
+        border-bottom: solid map-get($blue, 4) 3px;
+        border-top: solid map-get($blue, 4) 3px;
+        background-color: map-get($blue, 6);
+    }
+
+    tbody tr td{
+        font-size: 14px;
+        color:slategrey;
+        border-bottom: solid map-get($blue, 4) 3px;
+        text-align: center;
+        padding: 10px;
+
+        img{
+            height: 40px;
+        }
+    }
+}
+
+
+
+tr{
+    height: 40px;
+    text-align: center;
+}
+
+
+
+/*-------------------------------------SECCIÓN BENEFICIOS-----------------------------*/
+
+#benefits {
+    position: relative;
+
+    .anchor{
+        position: absolute;
+        left: 0px;
+        top: -70px;
+    }
+}
+
+
+.benefits{
+    &__conteiner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__h3{
+        color:map-get($blue, 4);
+        font-style: 20px;
+        font-weight: 500;
+        padding-top: 20px;
+    }
+
+    &__card{
+        width:300px;
+        padding: 25px;
+        border-radius: 15px;
+        box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+        background-color: $white;
+        text-align: center;
+        margin-bottom: 10px;
+        border: none;
+        transition: ease-in-out 1s;
+
+        &:hover{
+            box-shadow: 0 7px 20px 0 #a2d6f8;
+            transform: scale(1.05);
+        }
+
+        p{
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+
+        .benefits__icon{
+            height: 70px;
+            margin-top: 20px;
+        }
+    }
+}
+
+
+/*-------------------------------------SECCIÓN EQUIPO-----------------------------*/
+
+
+#team {
+    position: relative;
+
+    .anchor {
+        position: absolute;
+        left: 0px;
+        top: -70px;
+    }
+}
+
+.team{
+    &__conteiner{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+
+    &__card{
+        @extend .benefits__card;
+
+        &:hover{
+            box-shadow: 0 7px 20px 0 #a2d6f8;
+            transform: scale(1.05);
+        }
+
+        img{
+            width: 200px;
+            z-index: 0;
+            margin-bottom: 10px;
+            border-radius: 10px;
+        }
+
+        h3{
+            color: map-get($blue, 4);
+            font-style: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+
+        p{
+            color: $grey-borea;
+            margin-left: 0;
+            margin-bottom: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+
+
+/*-------------------------------------FORMULARIO-----------------------------*/
+
+#contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-template-areas: "info form";
+    position: relative;
+    background-color: map-get($blue, 6);
+    padding: 50px;
+    margin-bottom: 20px;
+    height: 600px;
+
+    h2{
+        margin-left: 0;
+    }
+
+    p{
+        margin-left: 0;
+    }
+
+    .anchor{
+        position: absolute;
+        left: 0px;
+        top: -70px;
+    }
+}
+
+.contact{
+    &__info{
+    grid-area: info;
+    }
+
+    &__form{
+        grid-area: form;
+        width: 95%;
+        margin-top: 40px;
+        padding-left: 2.5%;
+        padding-right: 2.5%;
+
+        input{
+            height: 40px;
+            width: 100%;
+            border: map-get($blue, 5) solid 2px;
+            border-radius: 8px;
+            padding-left: 2.5%;
+            padding-right: 2.5%;
+    
+            &[type=checkbox]{
+                height: 20px;
+            }
+    
+            &[type=reset]{
+                border: map-get($blue,2) 2px solid;
+            }
+            
+            &:focus{
+                border: map-get($blue, 4) solid 2px;
+                border-radius: 8px;
+                outline: none;
+            }
+        }
+    
+        select{
+            height: 40px;
+            width: 101%;
+            border: map-get($blue, 5) solid 2px;
+            border-radius: 8px;
+            padding-left: 20px;
+            padding-right: 20px;
+            outline: none;
+        }
+        
+        textarea{
+            height: 100px;
+            width: 100%;
+            border: map-get($blue, 5) solid 2px;
+            border-radius: 8px;
+            outline: none;
+            font-family: roboto;
+            padding: 2.5%;
+            resize: none;
+    
+            &:focus{
+                border: map-get($blue, 4) solid 2px;
+            }
+        }
+    }
+    &__button{
+
+        &--primary{ /*botón primario*/
+            background-color: map-get($blue, 4);
+            border: none;
+            color: map-get($blue, 6);
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 5px;
+            width: 100%;
+            transition: 0.5s;
+            
+            &:hover{
+            color: map-get($blue, 6);
+            font-weight: 400;
+            background-color: map-get($blue,2);
+            }
+        }
+        
+        &--secondary{
+            background-color: map-get($blue, 6);
+            color: map-get($blue,2);
+            padding: 10px;
+            font-size: 14px;
+            font-weight: 400;
+            border-radius: 5px;
+            width: 100%;
+            transition: 0.5s;
+
+            &:hover{
+                color: map-get($blue, 6);
+                font-weight: 400;
+                background-color: map-get($blue,2);
+            }
+        }
+    }
+}
+
+.form{
+    &__name{
+        grid-area: name; 
+    }
+
+    &__surname{
+        grid-area: surname; 
+    }
+
+    &__email{
+        grid-area: email; 
+    }
+
+    &__label_select{
+        grid-area: label_select;
+        align-self: flex-end; 
+
+        p{
+            margin: 0;
+        }
+    }
+
+    &__select{
+        grid-area: select; 
+    }
+
+    &__textarea { 
+        grid-area: textarea; 
+      }
+      
+    &__label_noticias { 
+        grid-area: label_noticias; 
+        align-self: center;
+      }
+    
+    &__check { 
+        grid-area: check; 
+    
+      }
+      
+    &__reset { 
+        grid-area: reset; 
+      }
+      
+    &__submit { 
+        grid-area: submit; 
+      }
+}
+
+
+
+#form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px 20px;
+    grid-template-areas:    "name name surname surname"
+                            "email email email email"
+                            "label_select select select select"
+                            "textarea textarea textarea textarea"
+                            "textarea textarea textarea textarea"
+                            "label_noticias label_noticias label_noticias check"
+                            "reset reset submit submit";
+    padding: 10px;
+    padding-top: 0px;
+    align-items: center;
+}
+  
+
+
+
+/*-------------------------------------FOOTER-----------------------------*/
+
+.footer{
+    background-color: $footer;
+    position: relative;
+    height: 120px;
+    width: 100%;
+    margin: 0px;
+    
+    &__logo{
+        height: 40px; 
+        margin-top: 35px;
+        margin-right: 20px;
+        display: inline-block;
+        position: absolute;
+    }
+
+    &__menu{
+        list-style: none;
+        display: inline-block;
+        flex-wrap: wrap;
+
+        li{
+            display: inline-block;
+            margin-top: 45px;
+            font-size: 12px;
+            padding-right: 30px;
+        }
+    }
+
+}
+
+.footer__sm{
+    display: inline-block;
+    margin: 0;
+    margin-top: 10px;
+
+    a{
+        padding-right: 45px;
+
+        img{
+            margin: 0;
+            margin-top: 35px;
+            height: 15px;
+            transition: all 0.5s;
+            padding: 0;
+
+            &:hover{
+                transform: translate(-10%,-15%) scale(3) rotate(360deg);
+                background-color: map-get($blue, 4);
+                padding: 5px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+
+@media only screen and (max-width:768px)
+{
+
+    #contact {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 20px;
+        grid-template-areas:    "info"
+                                "form";
+        height: auto;
+    }
+
+    .benefits__card{ /*Tarjetas */
+        width:500px;
+    }
+
+    .team__card{ /*Tarjetas */
+        width:500px;
+    }
+
+    #about{
+        height: auto;
+    }
+    .about{
+        &__block{ 
+        width: 90%;
+        position: relative;
+        }
+
+        &__description{
+        width: auto;
+        top: 10px;
+        display: block;
+        position: relative;
+        }
+    }
+}

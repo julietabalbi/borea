@@ -1,0 +1,629 @@
+@charset "UTF-8";
+* {
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*-------------------------------------ESTILOS GENERALES-----------------------------*/
+a:link {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+p {
+  /* Parrafos sueltos */
+  font-size: 14px;
+  color: black;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0f181d;
+  margin-bottom: 10px;
+}
+
+.titulo {
+  /*Título de las secciones*/
+  font-family: 'Bebas Neue', cursive;
+  font-size: 36px;
+  font-weight: 400;
+  color: #0f4c75;
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.fondoSeccion {
+  /*Fondo de secciones*/
+  background-color: #f0f8ff;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.seccion {
+  padding-top: 50px;
+  padding-bottom: 70px;
+}
+
+/*-------------------------------------NAVBAR-----------------------------*/
+.navbar a img {
+  height: 52px;
+}
+
+#nav {
+  background-color: #0f181d;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  width: 100%;
+  z-index: 30;
+  padding-left: 30px;
+  padding-right: 0;
+}
+
+.menu {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 30px;
+}
+
+.menu__it {
+  margin-left: 50px;
+}
+
+.menu__it a:link {
+  color: #ffffff;
+}
+
+.menu__it a:visited {
+  color: #ffffff;
+}
+
+.menu__it a:hover {
+  color: #4169e1;
+  font-weight: 500;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu__button {
+  margin-right: 30px;
+}
+
+/*-------------------------------------VIDEO Y TEXTO-----------------------------*/
+.banner {
+  top: 200px;
+}
+
+.banner__h1 {
+  color: #ffffff;
+  font-size: 56px;
+  font-family: 'Bebas Neue', cursive;
+  font-weight: 500;
+  margin-left: 0;
+}
+
+.banner__par {
+  font-size: 22px;
+  color: #ffffff;
+  margin-left: 0;
+}
+
+/*-------------------------------------SECCIÓN SOMOS BOREA-----------------------------*/
+#about {
+  height: 600px;
+  position: relative;
+}
+
+#about .anchor {
+  position: absolute;
+  left: 0px;
+  top: -70px;
+}
+
+.about__block {
+  display: inline-block;
+  width: 45%;
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  text-align: center;
+}
+
+.about__description {
+  width: 600px;
+  top: 200px;
+  display: inline-block;
+  position: absolute;
+}
+
+/*-------------------------------------SECCIÓN RECONOCIMIENTOS-----------------------------*/
+table {
+  border-collapse: collapse;
+  border: solid #3282b8 3px;
+  width: 95%;
+  margin-left: 2%;
+}
+
+table thead {
+  font-weight: 500;
+  color: #3282b8;
+  border-bottom: solid #3282b8 3px;
+  border-top: solid #3282b8 3px;
+  background-color: #f0f8ff;
+}
+
+table tbody tr td {
+  font-size: 14px;
+  color: slategrey;
+  border-bottom: solid #3282b8 3px;
+  text-align: center;
+  padding: 10px;
+}
+
+table tbody tr td img {
+  height: 40px;
+}
+
+tr {
+  height: 40px;
+  text-align: center;
+}
+
+/*-------------------------------------SECCIÓN BENEFICIOS-----------------------------*/
+#benefits {
+  position: relative;
+}
+
+#benefits .anchor {
+  position: absolute;
+  left: 0px;
+  top: -70px;
+}
+
+.benefits__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.benefits__h3 {
+  color: #3282b8;
+  font-style: 20px;
+  font-weight: 500;
+  padding-top: 20px;
+}
+
+.benefits__card, .team__card {
+  width: 300px;
+  padding: 25px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+          box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+  background-color: #ffffff;
+  text-align: center;
+  margin-bottom: 10px;
+  border: none;
+  -webkit-transition: ease-in-out 1s;
+  transition: ease-in-out 1s;
+}
+
+.benefits__card:hover, .team__card:hover {
+  -webkit-box-shadow: 0 7px 20px 0 #a2d6f8;
+          box-shadow: 0 7px 20px 0 #a2d6f8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.benefits__card p, .team__card p {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.benefits__card .benefits__icon, .team__card .benefits__icon {
+  height: 70px;
+  margin-top: 20px;
+}
+
+/*-------------------------------------SECCIÓN EQUIPO-----------------------------*/
+#team {
+  position: relative;
+}
+
+#team .anchor {
+  position: absolute;
+  left: 0px;
+  top: -70px;
+}
+
+.team__conteiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.team__card:hover {
+  -webkit-box-shadow: 0 7px 20px 0 #a2d6f8;
+          box-shadow: 0 7px 20px 0 #a2d6f8;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+.team__card img {
+  width: 200px;
+  z-index: 0;
+  margin-bottom: 10px;
+  border-radius: 10px;
+}
+
+.team__card h3 {
+  color: #3282b8;
+  font-style: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.team__card p {
+  color: #8a8d97;
+  margin-left: 0;
+  margin-bottom: 0;
+  margin-right: 0;
+}
+
+/*-------------------------------------FORMULARIO-----------------------------*/
+#contact {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  gap: 20px;
+      grid-template-areas: "info form";
+  position: relative;
+  background-color: #f0f8ff;
+  padding: 50px;
+  margin-bottom: 20px;
+  height: 600px;
+}
+
+#contact h2 {
+  margin-left: 0;
+}
+
+#contact p {
+  margin-left: 0;
+}
+
+#contact .anchor {
+  position: absolute;
+  left: 0px;
+  top: -70px;
+}
+
+.contact__info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: info;
+}
+
+.contact__form {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: form;
+  width: 95%;
+  margin-top: 40px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.contact__form input {
+  height: 40px;
+  width: 100%;
+  border: #e2f3ff solid 2px;
+  border-radius: 8px;
+  padding-left: 2.5%;
+  padding-right: 2.5%;
+}
+
+.contact__form input[type=checkbox] {
+  height: 20px;
+}
+
+.contact__form input[type=reset] {
+  border: #0f4c75 2px solid;
+}
+
+.contact__form input:focus {
+  border: #3282b8 solid 2px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.contact__form select {
+  height: 40px;
+  width: 101%;
+  border: #e2f3ff solid 2px;
+  border-radius: 8px;
+  padding-left: 20px;
+  padding-right: 20px;
+  outline: none;
+}
+
+.contact__form textarea {
+  height: 100px;
+  width: 100%;
+  border: #e2f3ff solid 2px;
+  border-radius: 8px;
+  outline: none;
+  font-family: roboto;
+  padding: 2.5%;
+  resize: none;
+}
+
+.contact__form textarea:focus {
+  border: #3282b8 solid 2px;
+}
+
+.contact__button--primary {
+  /*botón primario*/
+  background-color: #3282b8;
+  border: none;
+  color: #f0f8ff;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__button--primary:hover {
+  color: #f0f8ff;
+  font-weight: 400;
+  background-color: #0f4c75;
+}
+
+.contact__button--secondary {
+  background-color: #f0f8ff;
+  color: #0f4c75;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 400;
+  border-radius: 5px;
+  width: 100%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.contact__button--secondary:hover {
+  color: #f0f8ff;
+  font-weight: 400;
+  background-color: #0f4c75;
+}
+
+.form__name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: name;
+}
+
+.form__surname {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: surname;
+}
+
+.form__email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: email;
+}
+
+.form__label_select {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: label_select;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.form__label_select p {
+  margin: 0;
+}
+
+.form__select {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 3;
+  grid-area: select;
+}
+
+.form__textarea {
+  -ms-grid-row: 4;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 4;
+  grid-area: textarea;
+}
+
+.form__label_noticias {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: label_noticias;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.form__check {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: check;
+}
+
+.form__reset {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: reset;
+}
+
+.form__submit {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 2;
+  grid-area: submit;
+}
+
+#form-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 10px 20px;
+      grid-template-areas: "name name surname surname" "email email email email" "label_select select select select" "textarea textarea textarea textarea" "textarea textarea textarea textarea" "label_noticias label_noticias label_noticias check" "reset reset submit submit";
+  padding: 10px;
+  padding-top: 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/*-------------------------------------FOOTER-----------------------------*/
+.footer {
+  background-color: #5f778d;
+  position: relative;
+  height: 120px;
+  width: 100%;
+  margin: 0px;
+}
+
+.footer__logo {
+  height: 40px;
+  margin-top: 35px;
+  margin-right: 20px;
+  display: inline-block;
+  position: absolute;
+}
+
+.footer__menu {
+  list-style: none;
+  display: inline-block;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer__menu li {
+  display: inline-block;
+  margin-top: 45px;
+  font-size: 12px;
+  padding-right: 30px;
+}
+
+.footer__sm {
+  display: inline-block;
+  margin: 0;
+  margin-top: 10px;
+}
+
+.footer__sm a {
+  padding-right: 45px;
+}
+
+.footer__sm a img {
+  margin: 0;
+  margin-top: 35px;
+  height: 15px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  padding: 0;
+}
+
+.footer__sm a img:hover {
+  -webkit-transform: translate(-10%, -15%) scale(3) rotate(360deg);
+          transform: translate(-10%, -15%) scale(3) rotate(360deg);
+  background-color: #3282b8;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 768px) {
+  #contact {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    gap: 20px;
+        grid-template-areas: "info" "form";
+    height: auto;
+  }
+  .benefits__card, .team__card {
+    /*Tarjetas */
+    width: 500px;
+  }
+  .team__card {
+    /*Tarjetas */
+    width: 500px;
+  }
+  #about {
+    height: auto;
+  }
+  .about__block {
+    width: 90%;
+    position: relative;
+  }
+  .about__description {
+    width: auto;
+    top: 10px;
+    display: block;
+    position: relative;
+  }
+}
+/*# sourceMappingURL=style.css.map */
