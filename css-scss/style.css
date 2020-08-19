@@ -148,6 +148,10 @@ h3 {
   text-align: center;
 }
 
+.about__block img {
+  border-radius: 8px;
+}
+
 .about__description {
   width: 600px;
   top: 200px;
@@ -226,8 +230,8 @@ tr {
   width: 300px;
   padding: 25px;
   border-radius: 15px;
-  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
-          box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 7px 20px 0 rgba(0, 0, 0, 0.2);
   background-color: #ffffff;
   text-align: center;
   margin-bottom: 10px;
